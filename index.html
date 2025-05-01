@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id"> <!-- Default lang, JS akan update -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta_title">PlanITdetail - Tim Web Application Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Hapus CSS bilingual inline -->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">PlanITdetail</div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Tentang Kami</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Layanan</a></li>
+                    <li><a href="#portfolio" data-i18n="portfolio_title">Portofolio</a></li>
+                    <li><a href="#team" data-i18n="nav_team">Tim Kami</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Kontak</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button data-lang="id" class="lang-button active" data-i18n-attr="aria-label:aria_lang_id">
+                        <img src="images/flags/id.svg" data-i18n-attr="alt:alt_flag_id" class="flag-icon">
+                    </button>
+                    <button data-lang="en" class="lang-button" data-i18n-attr="aria-label:aria_lang_en">
+                        <img src="images/flags/gb.svg" data-i18n-attr="alt:alt_flag_en" class="flag-icon">
+                    </button>
+                </div>
+            </div>
+            <button class="mobile-nav-toggle" data-i18n-attr="aria-label:aria_menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>PlanITdetail</h1>
+            <h2 data-i18n="hero_subtitle">Tim Developer Aplikasi Web Profesional</h2>
+            <p data-i18n="hero_desc">Kami merancang dan membangun...</p>
+            <a href="#portfolio" class="cta-button" data-i18n="hero_cta">Lihat Karya Kami</a>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-i18n="about_title">Tentang PlanITdetail</h2>
+             <div class="about-content">
+                 <p data-i18n="about_p1">PlanITdetail adalah tim...</p>
+                 <p data-i18n="about_p2">Dengan keahlian gabungan...</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-title" data-i18n="services_title">Keahlian & Layanan Kami</h2>
+            <p class="section-description" data-i18n="services_desc">Teknologi dan layanan...</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React / Vue / Angular (pilih yang relevan)</li>
+                        <li>Tailwind CSS / Bootstrap / SASS</li>
+                        <li>Responsive Design</li>
+                        <li>State Management (Redux/Zustand/Vuex)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                     <ul>
+                        <li>Node.js (Express/NestJS) / Python (Django/Flask) / PHP (Laravel) (pilih yang relevan)</li>
+                        <li>RESTful API / GraphQL</li>
+                        <li>Database (SQL: PostgreSQL/MySQL, NoSQL: MongoDB)</li>
+                        <li>Authentication & Authorization (JWT, OAuth)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="services_cat_other">Lainnya & Proses</h3>
+                    <ul>
+                        <li>Git & Version Control</li>
+                        <li>Docker / CI/CD (Dasar)</li>
+                        <li>Testing (Unit/Integration)</li>
+                        <li>Cloud (AWS/GCP/Azure - sebutkan jika ada pengalaman)</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title" data-i18n="portfolio_title">Portofolio</h2>
+            <p class="section-description" data-i18n="portfolio_desc">Beberapa proyek pilihan...</p>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="portfolio_filter_all">Semua</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="saas">SaaS Platform</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard & Internal Tools</button>
+                <button class="filter-btn" data-filter="api">API & Backend</button>
+                <button class="filter-btn" data-filter="landing">Interactive Landing Pages</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ecommerce saas">
+                    <img src="images/proyek1-thumbnail.jpg" data-i18n-attr="alt:alt_project1">
+                    <div class="portfolio-content">
+                        <h3>Platform Marketplace XYZ</h3>
+                        <p data-i18n="portfolio_project1_desc">Pengembangan full-stack...</p>
+                        <p><strong data-i18n="portfolio_project_tech">Teknologi:</strong> React, Node.js...</p>
+                        <div class="portfolio-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#" data-i18n="portfolio_project1_cta">Studi Kasus</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="portfolio-item" data-category="dashboard api">
+                     <img src="images/proyek2-thumbnail.jpg" data-i18n-attr="alt:alt_project2">
+                      <div class="portfolio-content">
+                         <h3>Dashboard Analitik Internal</h3>
+                         <p data-i18n="portfolio_project2_desc">Membangun dashboard...</p>
+                         <p><strong data-i18n="portfolio_project_tech">Teknologi:</strong> Vue, FastAPI...</p>
+                          <div class="portfolio-links">
+                              <a href="#contact" data-i18n="portfolio_project2_cta">Kontak untuk Demo</a>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <h2 class="section-title" data-i18n="team_title">Kenali Tim Kami</h2>
+            <p class="section-description" data-i18n="team_desc">Tim inti PlanITdetail...</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/foto-anggota1.jpg" data-i18n-attr="alt:alt_member1" class="team-photo">
+                    <h3>Nama Anggota 1</h3>
+                    <p class="team-role" data-i18n="team_member1_role">Lead Developer...</p>
+                    <p class="team-bio" data-i18n="team_member1_bio">Sedikit bio...</p>
+                    <div class="team-social-links">...</div>
+                </div>
+                 <div class="team-member">
+                     <img src="images/foto-anggota2.jpg" data-i18n-attr="alt:alt_member2" class="team-photo">
+                    <h3>Nama Anggota 2</h3>
+                    <p class="team-role" data-i18n="team_member2_role">Frontend Developer...</p>
+                    <p class="team-bio" data-i18n="team_member2_bio">Fokus pada user interface...</p>
+                     <div class="team-social-links">...</div>
+                </div>
+                 <div class="team-member">
+                     <img src="images/foto-anggota3.jpg" data-i18n-attr="alt:alt_member3" class="team-photo">
+                    <h3>Nama Anggota 3</h3>
+                    <p class="team-role" data-i18n="team_member3_role">Backend Developer...</p>
+                    <p class="team-bio" data-i18n="team_member3_bio">Berpengalaman dalam...</p>
+                     <div class="team-social-links">...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title" data-i18n="contact_title">Hubungi Kami</h2>
+            <p class="section-description" data-i18n="contact_desc">Siap memulai proyek...</p>
+            <div class="contact-methods">
+                <p>Email: <a href="mailto:info@planitdetail.com">info@planitdetail.com</a></p>
+                <p>LinkedIn: <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="contact_linkedin">Profil LinkedIn PlanITdetail</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> PlanITdetail.
+            <span data-i18n="footer_rights">Hak cipta dilindungi undang-undang.</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+</body>
+</html>
